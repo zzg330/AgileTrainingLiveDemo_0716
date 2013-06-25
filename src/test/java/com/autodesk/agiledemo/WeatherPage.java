@@ -23,7 +23,6 @@ public class WeatherPage extends SeleniumPage  {
     	clickButton("submit");
         waitForPageToLoad();
     }
-	
 	public String getFieldId(String field){
 		return field.replaceAll(" ", "-").toLowerCase()+"-value";
 	}
