@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Weather {
+	
 	private String city;
 	private String region;
 	private String country;

@@ -11,6 +11,7 @@ public class WeatherRetriever {
 	private static final String WEATHER_YAHOOAPIS_URL = "http://weather.yahooapis.com/forecastrss?p=";
 
 	public InputStream get(String zipcode) {
+
 		InputStream inputStream = null;
 		try {
 			inputStream = getWeatherConnection(zipcode).getInputStream();

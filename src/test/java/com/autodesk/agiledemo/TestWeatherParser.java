@@ -11,8 +11,10 @@ public class TestWeatherParser {
 
 	@Test
 	public void should_get_weather_info() throws IOException {
+		
 		WeatherParser parser = new WeatherParser();
 		Weather weather;
+		
 		try(InputStream inputStream = getClass().getClassLoader().getResourceAsStream("new_orleans_weather.xml")){
 			weather = parser.parse(inputStream);
 		}

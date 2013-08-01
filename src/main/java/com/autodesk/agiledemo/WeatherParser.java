@@ -13,8 +13,7 @@ public class WeatherParser {
 
 	private static final String YAHOO_WEATHER_NAMESPACE = "http://xml.weather.yahoo.com/ns/rss/1.0";
 
-	public Weather parse(InputStream inputStream) {
-		
+	public Weather parse(InputStream inputStream) {		
 		Document doc;
 		try {
 			doc = createXmlReader().read( inputStream );
