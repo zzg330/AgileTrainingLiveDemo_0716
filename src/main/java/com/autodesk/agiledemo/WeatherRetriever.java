@@ -9,7 +9,6 @@ import java.net.URLConnection;
 public class WeatherRetriever {
 
 	private static final String WEATHER_YAHOOAPIS_URL = "http://xml.weather.yahoo.com/forecastrss?p=";
-	
 
 	public InputStream get(String zipcode) {
 
