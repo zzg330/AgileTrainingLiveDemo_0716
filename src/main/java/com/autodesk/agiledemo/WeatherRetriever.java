@@ -17,8 +17,7 @@ public class WeatherRetriever {
 			inputStream = getWeatherConnection(zipcode).getInputStream();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		
+		}		
 		return inputStream;
 	}
 
