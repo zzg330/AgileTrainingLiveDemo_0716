@@ -19,7 +19,6 @@ public class WeatherRetriever {
 			e.printStackTrace();
 		}
 		
-		
 		return inputStream;
 	}
 
