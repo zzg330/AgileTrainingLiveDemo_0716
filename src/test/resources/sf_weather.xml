@@ -1,0 +1,50 @@
+<rss xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" version="2.0">
+<channel>
+<title>Yahoo! Weather - San Francisco, CA</title>
+<link>
+http://us.rd.yahoo.com/dailynews/rss/weather/San_Francisco__CA/*http://weather.yahoo.com/forecast/USCA0987_f.html
+</link>
+<description>Yahoo! Weather for San Francisco, CA</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 24 Mar 2014 10:52 pm PDT</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="San Francisco" region="CA" country="US"/>
+<yweather:units temperature="F" distance="mi" pressure="in" speed="mph"/>
+<yweather:wind chill="54" direction="290" speed="8"/>
+<yweather:atmosphere humidity="75" visibility="10" pressure="30.05" rising="0"/>
+<yweather:astronomy sunrise="7:05 am" sunset="7:23 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>
+http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif
+</url>
+</image>
+<item>
+<title>Conditions for San Francisco, CA at 10:52 pm PDT</title>
+<geo:lat>37.77</geo:lat>
+<geo:long>-122.42</geo:long>
+<link>
+http://us.rd.yahoo.com/dailynews/rss/weather/San_Francisco__CA/*http://weather.yahoo.com/forecast/USCA0987_f.html
+</link>
+<pubDate>Mon, 24 Mar 2014 10:52 pm PDT</pubDate>
+<yweather:condition text="Partly Cloudy" code="29" temp="54" date="Mon, 24 Mar 2014 10:52 pm PDT"/>
+<description>
+<![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/29.gif"/><br /> <b>Current Conditions:</b><br /> Partly Cloudy, 54 F<BR /> <BR /><b>Forecast:</b><BR /> Mon - Mostly Clear. High: 63 Low: 48<br /> Tue - Showers. High: 56 Low: 50<br /> Wed - Rain. High: 56 Low: 50<br /> Thu - Showers. High: 58 Low: 52<br /> Fri - Partly Cloudy. High: 61 Low: 52<br /> <br /> <a href="http://us.rd.yahoo.com/dailynews/rss/weather/San_Francisco__CA/*http://weather.yahoo.com/forecast/USCA0987_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/> (provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]>
+</description>
+<yweather:forecast day="Mon" date="24 Mar 2014" low="48" high="63" text="Mostly Clear" code="33"/>
+<yweather:forecast day="Tue" date="25 Mar 2014" low="50" high="56" text="Showers" code="11"/>
+<yweather:forecast day="Wed" date="26 Mar 2014" low="50" high="56" text="Rain" code="12"/>
+<yweather:forecast day="Thu" date="27 Mar 2014" low="52" high="58" text="Showers" code="11"/>
+<yweather:forecast day="Fri" date="28 Mar 2014" low="52" high="61" text="Partly Cloudy" code="30"/>
+<guid isPermaLink="false">USCA0987_2014_03_28_7_00_PDT</guid>
+</item>
+</channel>
+</rss>
+<!--
+ api29.weather.gq1.yahoo.com Tue Mar 25 06:28:30 PST 2014 
+ -->
