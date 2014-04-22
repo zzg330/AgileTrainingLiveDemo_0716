@@ -22,6 +22,7 @@ public class WeatherRetriever {
 		return inputStream;
 	}
 
+
 	private URLConnection getWeatherConnection(String zipcode) throws IOException, MalformedURLException {
 		return new URL(WEATHER_YAHOOAPIS_URL + zipcode).openConnection();
 	}
