@@ -57,28 +57,26 @@ public class Weather {
 	}
 	public String getWearingAdvice() {
 		
-		Map <String, String> map = new HashMap<>();
-		map.put("truetrue", "Umbrella, T-shirt");
-		map.put("truefalse", "Raincoat");
-		map.put("falsetrue", "T-shirt");
-		map.put("falsefalse", "Shirts");
-		
 		if (!IsConditionDefined() || !IsTemperatureInScope()) return "No Wearing Advice";
-
-		return map.get(String.valueOf(IsRaining())+String.valueOf(IsTempHot()));
 		
+				
+		Map <String, String> map = new HashMap<>();
+		map.put("Rainingtrue", "Umbrella, T-shirt");
+		map.put("Rainingfalse", "Raincoat");
+		map.put("Sunnytrue", "T-shirt");
+		map.put("Sunnyfalse", "Shirts");
+		map.put("Cloudytrue", "T-shirt");
+		map.put("Cloudyfalse", "Jacket");				
+
+		return map.get(condition+String.valueOf(IsTempHot()));		
 	}
-	
-	private Boolean IsRaining() {
-		return condition == "Raining";
-	}
-	
+
 	private Boolean IsTempHot() {
 		return temperature >= 70d;
 	}
 	
 	private Boolean IsConditionDefined() {
-		return (condition == "Sunny" || condition == "Raining");
+		return (condition.equals("Sunny") || condition.equals("Raining")||condition.equals("Cloudy"));
 	}
 	
 	private Boolean IsTemperatureInScope() {

@@ -8,7 +8,8 @@ I want to get wearing advice based on weather forecast
 
             60-69       70-79               
 Sunny       Shirts      T-shirt             
-Raining     Raincoat    Umbrella, T-shirt     
+Raining     Raincoat    Umbrella, T-shirt 
+Cloudy    	Jacket        T-shirt
 
 Scenario: Get Wearing Advice by zip-code
 

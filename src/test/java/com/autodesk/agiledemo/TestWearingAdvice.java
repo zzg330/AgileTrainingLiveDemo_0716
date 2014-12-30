@@ -11,17 +11,30 @@ public class TestWearingAdvice {
 	@Test
 	public void expected_shirts_when_temperature_60_and_conditon_sunny(){
 		assertWearingAdviceEquals("Sunny", 60d, "Shirts");
+		
+	}
+	
+	@Test
+	public void expected_jacket_when_temperature_60_and_conditon_cloudy(){
+		assertWearingAdviceEquals("Cloudy", 60d, "Jacket");
+		
+	}
+	
+	@Test
+	public void expected_T_shirt_when_temperature_70_and_conditon_cloudy(){
+		assertWearingAdviceEquals("Cloudy", 70d, "T-shirt");
+		
 	}
 	
 	@Test
 	public void expected_NoWearingAdvice_when_temperature_out_of_scope(){
-		assertWearingAdviceEquals("Sunny", 50, "No Wearing Advice");
+		assertWearingAdviceEquals("Cloudy", 50, "No Wearing Advice");
 		assertWearingAdviceEquals("Sunny", 80, "No Wearing Advice");
 	}
 	
 	@Test
 	public void expected_NoWearingAdvice_when_condition_undefined() {
-		assertWearingAdviceEquals("Cloudy", 67, "No Wearing Advice");
+		assertWearingAdviceEquals("Sonw", 67, "No Wearing Advice");
 	}
 	
 	@Test
@@ -42,6 +55,8 @@ public class TestWearingAdvice {
 	}
 
 	private void assertWearingAdviceEquals(String condition, double temperature, String expectedWearingAdvice) {
+		
+		
 		weather.setCondition(condition);
 		weather.setTemperature(temperature);
 		assertEquals(expectedWearingAdvice, weather.getWearingAdvice());
