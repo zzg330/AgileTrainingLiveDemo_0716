@@ -14,12 +14,14 @@ public class WeatherRetriever {
 
 		InputStream inputStream = null;
 		try {
-			inputStream = getWeatherConnection(zipcode).getInputStream();
+			inputStream = getWeatherConnection(zipcode).getInputStream();			
 		} catch (IOException e) {
 			e.printStackTrace();
+			
+			System.out.print("Invalid zip code");
 		}
 		
-		return inputStream;
+		return inputStream;		
 	}
 
 	private URLConnection getWeatherConnection(String zipcode) throws IOException, MalformedURLException {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Weather</title>
+<title>Weather Advice</title>
 </head>
 <body>
 	<%
@@ -12,6 +12,7 @@
 		Weather weather = null;
 		if (zipCode != null && !zipCode.isEmpty()){
 			weather = new WeatherParser().parse(new WeatherRetriever().get(zipCode));
+				
 		}
  	%>
 	<form>

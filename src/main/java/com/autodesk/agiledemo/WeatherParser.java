@@ -16,7 +16,8 @@ public class WeatherParser {
 	public Weather parse(InputStream inputStream) {		
 		Document doc;
 		try {
-			doc = createXmlReader().read( inputStream );
+			 doc = createXmlReader().read( inputStream );
+
 		} catch (DocumentException e) {
 			e.printStackTrace();
 			return new Weather();

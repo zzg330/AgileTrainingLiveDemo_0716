@@ -68,7 +68,8 @@ public class Weather {
 		map.put("Cloudytrue", "T-shirt");
 		map.put("Cloudyfalse", "Jacket");				
 
-		return map.get(condition+String.valueOf(IsTempHot()));		
+		return map.get(condition+String.valueOf(IsTempHot()));	
+		
 	}
 
 	private Boolean IsTempHot() {
