@@ -27,7 +27,7 @@
 		<li><span id="city">City: </span><span id="city-value"><%= weather.getCity()%></span></li>
         <li><span id="region">Region: </span><span id="region-value"><%= weather.getRegion()%></span></li>
         <li><span id="country">Country: </span><span id="country-value"><%= weather.getCountry()%></span></li>
-        <li><span id="temperature">Temperature: </span><span id="temperature-value"><%= weather.getTemperature()%></span></li>
+        <li><span id="temperature">Temperature: </span><span id="temperature-value"><%= (weather.getTemperature()-32)/1.8%></span><span> C</span></li>
         <li><span id="condition">Condition: </span><span id="condition-value"><%= weather.getCondition()%></span></li>
         <li><span id="humidity">Humidity: </span><span id="humidity-value"><%= weather.getHumidity()%></span></li>
         <li><span id="wind-speed">Wind Speed: </span><span id="wind-speed-value"><%= weather.getWindSpeed()%></span></li>
